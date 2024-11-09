@@ -43,17 +43,15 @@ function App() {
       <div className="input-container">
         <input type="text" placeholder="Search for countries" className="search" onChange={handleChange} />
       </div>
-      <div className="countryCard">
-        {data.length > 0 ? (
-          data.map(({ name, flags, cca3 }) => (
-            <div key={cca3} className="country">
+      <div className="country">
+        
+          {data.map(({ name, flags, cca3 }) => (
+            <div key={cca3} className="countryCard">
               <img src={flags.svg} alt={name.common} style={{ width: '100px', height: '100px' }} />
               <h2>{name.common}</h2>
             </div>
-          ))
-        ) : (
-          <p>No countries found</p>
-        )}
+          ))}
+         
       </div>
     </>
   );

@@ -1,11 +1,11 @@
-.countryCard{
+.country{
     display:flex;
     gap:10px;
     flex-wrap: wrap;
     margin-top: 10px;
     justify-content: center;
 }
-.country{
+.countryCard{
     width: 150px;
     height: 150px;
     border: 1px solid grey;
